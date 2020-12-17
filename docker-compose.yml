@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  redis:
+    image: redis:4
+  wiola:
+    image: 421p/wiola:0.8.0-SNAPSHOT
+    ports:
+      - "86:80"
+      - "87:80"
+    volumes:
+      - ./nginx0.conf:/usr/local/openresty/nginx/conf/nginx.conf
+    environment:
+      - WIOLA_MAX_PAYLOAD_LEN=10000000
+    depends_on:
+      - redis

@@ -1,0 +1,19 @@
+{
+  "name": "wamp-tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autobahn": "^20.9.2",
+    "autobahnjs": "^0.4.9",
+    "msgpack5": "^4.2.1",
+    "nightlife": "^1.3.2",
+    "nightlife-rabbit": "git+https://github.com/christian-raedel/nightlife-rabbit.git",
+    "wampy": "^5.0.2"
+  }
+}
